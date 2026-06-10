@@ -1,0 +1,8 @@
+project: sqlite3
+target: ossfuzz
+testsuite:
+  - file:///mayhem/mayhem/testsuite/ossfuzz
+cmds:
+  - cmd: /mayhem/ossfuzz
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/ossfuzz.dict

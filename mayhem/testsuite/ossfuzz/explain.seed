@@ -1,0 +1,1 @@
+CREATE TABLE t(x); INSERT INTO t VALUES(randomblob(16)); SELECT quote(x) FROM t; EXPLAIN SELECT * FROM t;
