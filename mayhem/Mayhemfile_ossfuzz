@@ -1,0 +1,9 @@
+project: sqlite3
+target: ossfuzz
+cmds:
+  - cmd: /mayhem/ossfuzz
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/ossfuzz.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ossfuzz/testsuite
